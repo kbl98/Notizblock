@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/comic-neue-v8-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/comic-neue-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/comic-neue-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/comic-neue-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/comic-neue-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/comic-neue-v8-latin-regular.svg#ComicNeue') format('svg'); /* Legacy iOS */
+  }
+  /* comic-neue-700 - latin */
+  @font-face {
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/comic-neue-v8-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/comic-neue-v8-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/comic-neue-v8-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/comic-neue-v8-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/comic-neue-v8-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/comic-neue-v8-latin-700.svg#ComicNeue') format('svg'); /* Legacy iOS */
+  }
+
+ /* coming-soon-regular - latin */
+ @font-face {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/coming-soon-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/coming-soon-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/coming-soon-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/coming-soon-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/coming-soon-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/coming-soon-v19-latin-regular.svg#ComingSoon') format('svg'); /* Legacy iOS */
+  }
+
+body{
+     margin:0;
+    width:100%;
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("img/cork-board.jpg");
+    background-size: cover;
+    
+}
+
+
+
+header{
+    margin-top:0;
+    padding-top:25px;
+    padding-right: 80px;
+    padding-left:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: bisque;
+}
+
+h1{
+    font-size: 40px;
+   
+    padding-bottom:5px;
+    background-color: bisque;
+    font-family: 'Comic Neue';
+    font-weight:700;
+}
+
+.icons{
+    display:flex;
+    justify-content: space-between;
+    width:15%;
+}
+
+#head-icon{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+    transition: all 120ms ease-in-out;
+}
+
+#head-icon:hover{
+    transform: scale(1.2);
+    
+}
+
+
+#content-container{
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+    
+#h2{
+    width:40%;
+    margin-top:2%;
+    background-color:whitesmoke;
+    border:solid;
+    border-color: black;
+    border-radius:3px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#createMessage-container{
+    width:40%;
+    margin-top:2%;
+    background-color:whitesmoke;
+    border:solid;
+    border-color: black;
+    border-radius:3px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+
+#name{
+    font-family: 'Comic Neue';
+    font-size: 20px;
+    margin-top:10px;
+    padding-left:2px;
+    width:60%
+}
+
+#message{
+    font-family: 'Comic Neue';
+    font-size: 18px;
+    width:80%;
+    margin-top:10px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:5px;
+    height:200px;
+}
+
+ #pin{
+    height:40px;
+    width:50px;
+    object-fit: contain;
+    transition: all 120ms ease-in-out;
+}
+
+#pin:hover{
+    transform:scale(1.2)
+}
+
+.pickedmessage{
+    background-color: rgb(255, 234, 0);
+    border:solid;
+    border-color: grey;
+    box-shadow: 3 2 3 2 rgba(0,0,0,0.6);
+    font-family:'Coming Soon'; 
+    padding:5px;
+    min-width: 200px;
+    max-width: 400px;
+    min-height:200px;
+    margin:10px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+   
+.text{
+    text-align: left;
+    word-wrap: break-word;
+    hyphens:auto;
+}
+
+ #delete-bt img{
+    height:25px;
+    width:25px;
+    object-fit: contain;
+    transition: all 120ms ease-in-out;
+}
+
+
+ #delete-bt img:hover{
+    transform: scale(1.2);
+}
+
+.trash-bt{
+    display:flex;
+
+}
+
+#content{
+    padding-left:50px;
+    padding-right:50px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.d-none{
+    display: none !important;
+}
+
+@media screen and (max-width:700px) {
+
+    h1{
+        font-size: 25px;
+
+    }
+
+    header{
+        padding:10px;
+    }
+
+    #head-icon{
+        height:30px;
+        width:30px;
+
+    }
+
+    #createMessage-container{
+        width:80%;
+        
+    }
+    
+    #name{
+        font-size:18px;
+    }
+
+    #message{
+        font-size:16px;
+        height:100px;
+    }
+
+    #pin{
+        height:30px;
+        width:35px;
+    }
+
+    #content{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
